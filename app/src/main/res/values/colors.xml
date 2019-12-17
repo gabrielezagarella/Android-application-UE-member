@@ -5,4 +5,5 @@
     <color name="colorAccent">#ffff8800</color>
     <color name="zircon">#e0e6e4</color>
     <color name="login">#042D5C</color>
+    <color name="background">#D5E1FF</color>
 </resources>

@@ -1,4 +1,5 @@
 package org.cdo.UnionEuropeanCountry;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,10 +21,11 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
             fragment = createFragment();
             manager.beginTransaction()
                     .add(R.id.fragment_container, fragment)
-                   .commit();
+                    .commit();
         }
+        final MediaPlayer sound_one = MediaPlayer.create(this, R.raw.inno);
+        sound_one.start();
     }
-
     public abstract Fragment createFragment();
 
 }

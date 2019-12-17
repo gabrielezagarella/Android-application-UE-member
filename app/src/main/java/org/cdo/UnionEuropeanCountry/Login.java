@@ -1,5 +1,6 @@
 package org.cdo.UnionEuropeanCountry;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,9 @@ public class Login extends AppCompatActivity {
             register = findViewById(R.id.register);
             usernameError = findViewById(R.id.usernameError);
             passError = findViewById(R.id.passError);
+
+            final MediaPlayer sound_one = MediaPlayer.create(this, R.raw.inno);
+                  sound_one.start();
 
             login.setOnClickListener(new View.OnClickListener() {
                 @Override
