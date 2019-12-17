@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-33dp"
-        android:text="Sistem Informatic UE"
+        android:text="@string/sistem_informatic_UE"
         android:textSize="30dp"
         android:textColor="@color/login"/>
 
